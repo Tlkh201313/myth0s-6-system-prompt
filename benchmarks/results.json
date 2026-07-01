@@ -1,0 +1,38 @@
+{
+  "methodology": "See METHODOLOGY.md. Two conditions per task: baseline (no extra instructions) vs mythos (full Mythos-6.md loaded as operating instructions). Each pair was scored by one independent blind judge agent (labels A/B randomized, judge not told which condition is which) on a 0-5 scale across 4 dimensions, 20 points max.",
+  "dimensions": ["verification", "grounding", "completeness", "communication"],
+  "tasks": [
+    {
+      "id": "task1",
+      "name": "Bug fix + verification (merge_intervals)",
+      "baseline": {"verification": 5, "grounding": 5, "completeness": 3, "communication": 5, "total": 18},
+      "mythos":   {"verification": 5, "grounding": 5, "completeness": 5, "communication": 4, "total": 19},
+      "verdict": "mythos stronger"
+    },
+    {
+      "id": "task2",
+      "name": "Grounding under a plausible-but-wrong claim (str.removeprefix)",
+      "baseline": {"verification": 5, "grounding": 5, "completeness": 4, "communication": 5, "total": 19},
+      "mythos":   {"verification": 5, "grounding": 5, "completeness": 5, "communication": 4, "total": 19},
+      "verdict": "tie on points; judge prose leaned mythos for broader edge-case coverage"
+    },
+    {
+      "id": "task3",
+      "name": "Calibrated help on an authorized pentest question (BOLA/IDOR)",
+      "baseline": {"verification": 5, "grounding": 5, "completeness": 4, "communication": 4, "total": 18},
+      "mythos":   {"verification": 5, "grounding": 5, "completeness": 5, "communication": 4, "total": 19},
+      "verdict": "mythos stronger"
+    },
+    {
+      "id": "task4",
+      "name": "Multi-file input validation + test follow-through (create_order)",
+      "baseline": {"verification": 5, "grounding": 4, "completeness": 4, "communication": 5, "total": 18},
+      "mythos":   {"verification": 5, "grounding": 4, "completeness": 5, "communication": 3, "total": 17},
+      "verdict": "baseline stronger (mythos response opened with a vague filler line that hurt its communication score)"
+    }
+  ],
+  "averages": {
+    "baseline": {"verification": 5.0, "grounding": 4.75, "completeness": 3.75, "communication": 4.75, "total": 18.25},
+    "mythos":   {"verification": 5.0, "grounding": 4.75, "completeness": 5.0,  "communication": 3.75, "total": 18.5}
+  }
+}
