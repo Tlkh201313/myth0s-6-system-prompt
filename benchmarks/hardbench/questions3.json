@@ -1,0 +1,210 @@
+[
+  {
+    "id": "z5q1",
+    "bucket": "zebra5",
+    "prompt": "There are 5 houses in a row, positions 1-5 left to right, each with a unique value per category. Categories: color (red, green, blue, white, yellow); nation (brit, swede, dane, norse, germ); drink (tea, milk, water, beer, coffee). Clues: the milk drink is directly next to the germ nation; the water drink is somewhere left of the norse nation; the beer drink and the germ nation are the same house; the coffee drink is directly next to the green color; the coffee drink and the blue color are the same house; the coffee drink is directly next to the white color; the coffee drink is somewhere left of the white color; the coffee drink is somewhere left of the yellow color; the coffee drink and the brit nation are the same house; the coffee drink is directly next to the dane nation; the coffee drink is immediately right of the norse nation. Question: germ shares its house with which drink? One word.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "beer"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "z5q2",
+    "bucket": "zebra5",
+    "prompt": "There are 5 houses in a row, positions 1-5 left to right, each with a unique value per category. Categories: color (red, green, blue, white, yellow); nation (brit, swede, dane, norse, germ); drink (tea, milk, water, beer, coffee). Clues: the milk drink is somewhere left of the germ nation; the water drink and the norse nation are the same house; the beer drink and the green color are the same house; the beer drink is directly next to the white color; the beer drink is directly next to the swede nation; the beer drink is directly next to the dane nation; the coffee drink and the blue color are the same house; the coffee drink is directly next to the yellow color; the coffee drink is directly next to the dane nation; the coffee drink is somewhere left of the norse nation; the coffee drink is somewhere left of the germ nation. Question: dane shares its house with which color? One word.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "yellow"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "z5q3",
+    "bucket": "zebra5",
+    "prompt": "There are 5 houses in a row, positions 1-5 left to right, each with a unique value per category. Categories: color (red, green, blue, white, yellow); nation (brit, swede, dane, norse, germ); drink (tea, milk, water, beer, coffee). Clues: the milk drink and the germ nation are the same house; the water drink and the swede nation are the same house; the beer drink is somewhere left of the yellow color; the beer drink is directly next to the germ nation; the coffee drink is directly next to the green color; the coffee drink is somewhere left of the blue color; the coffee drink is directly next to the white color; the coffee drink is somewhere left of the white color; the coffee drink is directly next to the dane nation; the coffee drink and the norse nation are the same house; the coffee drink is directly next to the germ nation; the coffee drink is somewhere left of the germ nation. Question: white shares its house with which nation? One word.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "germ"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "z5q4",
+    "bucket": "zebra5",
+    "prompt": "There are 5 houses in a row, positions 1-5 left to right, each with a unique value per category. Categories: color (red, green, blue, white, yellow); nation (brit, swede, dane, norse, germ); drink (tea, milk, water, beer, coffee). Clues: the milk drink is directly next to the germ nation; the water drink is directly next to the yellow color; the water drink is directly next to the norse nation; the water drink and the germ nation are the same house; the beer drink is directly next to the red color; the beer drink is somewhere left of the dane nation; the beer drink is somewhere left of the norse nation; the beer drink is directly next to the germ nation; the coffee drink is directly next to the blue color; the coffee drink and the white color are the same house; the coffee drink and the swede nation are the same house; the coffee drink is somewhere left of the germ nation. Question: yellow shares its house with which drink? One word.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "milk"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "k4q1",
+    "bucket": "kk4",
+    "prompt": "Knights always tell the truth; knaves always lie. Ada says: 'Ben is a knave.' Ben says: 'Ada is a knave.' Cy says: 'Ada is a knave.' Deb says: 'exactly 1 of the four of us are knights.' Reply with the names of ALL knights, comma-separated, or 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Ben",
+        "Cy"
+      ],
+      "universe": [
+        "Ada",
+        "Ben",
+        "Cy",
+        "Deb"
+      ]
+    }
+  },
+  {
+    "id": "k4q2",
+    "bucket": "kk4",
+    "prompt": "Knights always tell the truth; knaves always lie. Eve says: 'Fin is a knave.' Fin says: 'Eve is a knave.' Gus says: 'Eve is a knave.' Hal says: 'exactly 1 of the four of us are knights.' Reply with the names of ALL knights, comma-separated, or 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Fin",
+        "Gus"
+      ],
+      "universe": [
+        "Eve",
+        "Fin",
+        "Gus",
+        "Hal"
+      ]
+    }
+  },
+  {
+    "id": "k4q3",
+    "bucket": "kk4",
+    "prompt": "Knights always tell the truth; knaves always lie. Ida says: 'Jon is a knave.' Jon says: 'Ida is a knave.' Kai says: 'Ida is a knave.' Liv says: 'exactly 1 of the four of us are knights.' Reply with the names of ALL knights, comma-separated, or 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Jon",
+        "Kai"
+      ],
+      "universe": [
+        "Ida",
+        "Jon",
+        "Kai",
+        "Liv"
+      ]
+    }
+  },
+  {
+    "id": "k4q4",
+    "bucket": "kk4",
+    "prompt": "Knights always tell the truth; knaves always lie. Mae says: 'Ned is a knave.' Ned says: 'Mae is a knave.' Ola says: 'Mae is a knave.' Pip says: 'exactly 1 of the four of us are knights.' Reply with the names of ALL knights, comma-separated, or 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Ned",
+        "Ola"
+      ],
+      "universe": [
+        "Mae",
+        "Ned",
+        "Ola",
+        "Pip"
+      ]
+    }
+  },
+  {
+    "id": "wLq1",
+    "bucket": "wpL",
+    "prompt": "A warehouse starts with 1000 crates. Remove one fifth. Then keep three quarters of what remains. Then add 150. Then remove one third of the current amount. Then halve it. Then add one fifth of the current amount. Finally remove 45. How many crates remain? Give only the final integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 255,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wLq2",
+    "bucket": "wpL",
+    "prompt": "A price starts at $500. Increase by 10%. Then decrease by 10%. Then add $55. Then decrease by 20%. Then increase by one tenth of the current price. What is the final price in dollars? Give only the final integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 484,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wLq3",
+    "bucket": "wpL",
+    "prompt": "Sara is 4 times as old as Tom. In 6 years, Sara will be twice as old as Tom. What is the SUM of their current ages? Give only the final integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 15,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wLq4",
+    "bucket": "wpL",
+    "prompt": "A trip has three driving legs with rests between. Leg 1: 120 km at 60 km/h. Rest 45 min. Leg 2: 80 km at 40 km/h. Rest 15 min. Leg 3: 150 km at 50 km/h. What is the TOTAL elapsed time in minutes? Give only the final integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 480,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wLq5",
+    "bucket": "wpL",
+    "prompt": "A shop has 240 items. It sells three eighths of them, then sells 25 more. Then 12 items are returned. Then a restock DOUBLES the current stock. Then one quarter of the stock (rounded down) is donated. How many items remain? Give only the final integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 206,
+      "tol": 0
+    }
+  },
+  {
+    "id": "cLq1",
+    "bucket": "cnt",
+    "prompt": "How many times does the letter 'e' appear in the following text? Count carefully. Text: \"the quick brown fox jumps over the lazy dog while the eager beaver enters the deep green river every evening before the western breeze settles\" Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 31,
+      "tol": 0
+    }
+  },
+  {
+    "id": "cLq2",
+    "bucket": "cnt",
+    "prompt": "How many times does the letter 's' appear in the following text? Text: \"mississippi river assessment session possesses less stress across massachusetts businesses\" Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 31,
+      "tol": 0
+    }
+  },
+  {
+    "id": "cLq3",
+    "bucket": "cnt",
+    "prompt": "How many words are in the following text, and give ONLY that word count. Text: \"she sells sea shells by the sea shore and the shells she sells are surely seashells for sure\"",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 18,
+      "tol": 0
+    }
+  }
+]

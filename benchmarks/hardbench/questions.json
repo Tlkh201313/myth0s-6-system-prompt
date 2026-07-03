@@ -1,0 +1,752 @@
+[
+  {
+    "id": "b1q1",
+    "bucket": 1,
+    "prompt": "What weighs more: three pounds of feathers or two pounds of bricks? Answer in one short phrase.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "feather"
+        ]
+      ],
+      "forbid": [
+        "brick",
+        "equal",
+        "the same",
+        "weigh the same"
+      ]
+    }
+  },
+  {
+    "id": "b1q2",
+    "bucket": 1,
+    "prompt": "A bat and a ball cost $1.30 in total. The bat costs $1.00 more than the ball. How much does the ball cost, in dollars?",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 0.15,
+      "tol": 0.001
+    }
+  },
+  {
+    "id": "b1q3",
+    "bucket": 1,
+    "prompt": "A child is rushed into surgery. The surgeon looks at the child and says, 'I can operate on this child — she is my daughter.' The surgeon is the child's biological mother. Is that possible, and who is the surgeon? Answer briefly.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "mother"
+        ],
+        [
+          "yes",
+          "possible",
+          "of course"
+        ]
+      ],
+      "forbid": [
+        "not possible",
+        "impossible",
+        "cannot be"
+      ]
+    }
+  },
+  {
+    "id": "b1q4",
+    "bucket": 1,
+    "prompt": "A farmer has 24 sheep. All but 7 die. How many sheep are left?",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 7,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b1q5",
+    "bucket": 1,
+    "prompt": "How many months in a year have at least 28 days?",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 12,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b1q6",
+    "bucket": 1,
+    "prompt": "A red house is made of red bricks and a blue house is made of blue bricks. What is a greenhouse made of? One word.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "glass"
+        ]
+      ],
+      "forbid": [
+        "green brick",
+        "green house made of green"
+      ]
+    }
+  },
+  {
+    "id": "b1q7",
+    "bucket": 1,
+    "prompt": "There are 8 apples and you take away 5. How many apples do you have?",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 5,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b1q8",
+    "bucket": 1,
+    "prompt": "A rooster sits on the exact peak of a slanted barn roof and lays an egg. Which side of the roof does the egg roll down?",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "male",
+          "don't lay",
+          "do not lay",
+          "cannot lay",
+          "can't lay",
+          "no egg",
+          "roosters don",
+          "rooster cannot",
+          "rooster can't",
+          "rooster doesn",
+          "won't lay",
+          "will not lay"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b2q1",
+    "bucket": 2,
+    "prompt": "Five runners finish a race. Quinn finished before Sam. Rosa finished after Sam. Priya finished before Quinn. Tara finished last. Who finished first? Answer with one name.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "priya"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b2q2",
+    "bucket": 2,
+    "prompt": "In a row of 5 houses numbered 1 to 5 from left to right, the cat's house is immediately to the right of the dog's house. The dog is in house 2. The bird is in house 5. What is the cat's house number?",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 3,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b2q3",
+    "bucket": 2,
+    "prompt": "Seven kids stand in a single line. Sam is 3rd from the front. Tom is 2nd from the back. There are 7 kids total. How many kids stand between Sam and Tom?",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 2,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b2q4",
+    "bucket": 2,
+    "prompt": "Four people: Priya, Quinn, Rosa, Sam. Sam is taller than Priya. Rosa is shorter than Priya. Quinn is taller than Sam. Who is the second tallest? One name.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "sam"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b2q5",
+    "bucket": 2,
+    "prompt": "I am thinking of a whole number between 1 and 10 inclusive that is even, greater than 5, a multiple of 3, and less than 10. What is it?",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 6,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b2q6",
+    "bucket": 2,
+    "prompt": "A one-hour meeting starts exactly on the hour, strictly after 12:00 and strictly before 15:00, and it cannot start at 14:00. Using 24-hour time, what is the only possible start hour? Answer with the hour number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 13,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b2q7",
+    "bucket": 2,
+    "prompt": "Ana, Ben, and Cy each own exactly one pet (cat, dog, or fish) and wear exactly one shirt color (red, green, or blue); all three pets and all three colors are different. Clues: Ana does not own the cat. Ben owns the dog. The fish owner wears red. Cy does not wear green. Ben does not wear blue. Output exactly three lines, each formatted 'Name: pet, color'.",
+    "gtype": "pairs",
+    "gspec": {
+      "pairs": {
+        "ana": [
+          "fish",
+          "red"
+        ],
+        "ben": [
+          "dog",
+          "green"
+        ],
+        "cy": [
+          "cat",
+          "blue"
+        ]
+      }
+    }
+  },
+  {
+    "id": "b2q8",
+    "bucket": 2,
+    "prompt": "You have 3 pennies (1 cent), 2 nickels (5 cents), and 1 dime (10 cents). Using one or more of these coins, how many DIFFERENT positive total amounts can you make? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 19,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b3q1",
+    "bucket": 3,
+    "prompt": "Compute exactly: 4871 * 3344. Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 16288624,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b3q2",
+    "bucket": 3,
+    "prompt": "Compute exactly: 78 ** 3 (78 cubed). Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 474552,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b3q3",
+    "bucket": 3,
+    "prompt": "Compute exactly: 123456 + 789012 + 345678. Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 1258146,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b3q4",
+    "bucket": 3,
+    "prompt": "Compute exactly: 2 ** 17. Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 131072,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b3q5",
+    "bucket": 3,
+    "prompt": "Compute exactly: 17 * 19 * 23. Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 7429,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b3q6",
+    "bucket": 3,
+    "prompt": "How many days are there from 2023-03-15 to 2024-01-10 (exclusive of the start date, inclusive of the end date, i.e. the difference in days)? Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 301,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b3q7",
+    "bucket": 3,
+    "prompt": "What day of the week is 25 December 2025? Give the weekday name.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "thursday"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b3q8",
+    "bucket": 3,
+    "prompt": "Compute exactly: 9999 * 9999. Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 99980001,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b4q1",
+    "bucket": 4,
+    "prompt": "How many times does the letter 'r' appear in the phrase \"strawberry raspberry\"? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 6,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b4q2",
+    "bucket": 4,
+    "prompt": "How many times does the letter 's' appear in the phrase \"mississippi possesses\"? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 9,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b4q3",
+    "bucket": 4,
+    "prompt": "How many letters are in the word \"onomatopoeia\"? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 12,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b4q4",
+    "bucket": 4,
+    "prompt": "How many vowels (a, e, i, o, u) are in the word \"sequoia\"? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 5,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b4q5",
+    "bucket": 4,
+    "prompt": "How many times does the letter 'e' appear in the sentence \"the referee never believed the emcee\"? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 14,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b4q6",
+    "bucket": 4,
+    "prompt": "How many times does the substring \"na\" appear (non-overlapping) in \"banana bandana\"? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 3,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b4q7",
+    "bucket": 4,
+    "prompt": "How many words are in this sentence: \"the quick brown fox jumps over the lazy dog again\"? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 10,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b4q8",
+    "bucket": 4,
+    "prompt": "How many 1-bits (ones) are in the binary representation of the number 2025? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 8,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b5q1",
+    "bucket": 5,
+    "prompt": "Write a Python function run_length_encode(s) that returns the run-length encoding of string s: each maximal run of a character c of length n becomes c followed by n (as digits). E.g. 'aaabbc' -> 'a3b2c1'. Empty string -> ''. Return ONLY a fenced python code block defining the function.",
+    "gtype": "code",
+    "gspec": {
+      "fn": "b5q1"
+    }
+  },
+  {
+    "id": "b5q2",
+    "bucket": 5,
+    "prompt": "Write a Python function rle_decode(s) that expands a run-length string where each letter is followed by a count of one or more digits: 'a3b2' -> 'aaabb', 'x1' -> 'x', '' -> ''. Return ONLY a fenced python code block defining the function.",
+    "gtype": "code",
+    "gspec": {
+      "fn": "b5q2"
+    }
+  },
+  {
+    "id": "b5q3",
+    "bucket": 5,
+    "prompt": "Write a Python function is_clean_palindrome(s) that returns True iff s is a palindrome ignoring case and every non-alphanumeric character. '' -> True, 'A man, a plan, a canal: Panama' -> True, 'abc' -> False. Return ONLY a fenced python code block defining the function.",
+    "gtype": "code",
+    "gspec": {
+      "fn": "b5q3"
+    }
+  },
+  {
+    "id": "b5q4",
+    "bucket": 5,
+    "prompt": "Write a Python function fee_faw(n) returning a list of length n (for i from 1 to n): 'feefaw' if i divisible by both 3 and 5, 'fee' if divisible by 3, 'faw' if divisible by 5, otherwise the integer i itself. Return ONLY a fenced python code block defining the function.",
+    "gtype": "code",
+    "gspec": {
+      "fn": "b5q4"
+    }
+  },
+  {
+    "id": "b5q5",
+    "bucket": 5,
+    "prompt": "Write a Python function fib(n) returning the n-th Fibonacci number, 0-indexed, with fib(0)=0, fib(1)=1. Must be correct for n up to 50. Return ONLY a fenced python code block defining the function.",
+    "gtype": "code",
+    "gspec": {
+      "fn": "b5q5"
+    }
+  },
+  {
+    "id": "b5q6",
+    "bucket": 5,
+    "prompt": "Write a Python function gcd(a, b) returning the greatest common divisor of two non-negative integers (gcd(0,0)=0, gcd(12,18)=6). Return ONLY a fenced python code block defining the function.",
+    "gtype": "code",
+    "gspec": {
+      "fn": "b5q6"
+    }
+  },
+  {
+    "id": "b5q7",
+    "bucket": 5,
+    "prompt": "Write a Python function caesar(s, k) that shifts each ASCII letter forward by k positions within its case (wrapping a-z and A-Z), leaving non-letters unchanged. k may be any integer including negative or >26. Return ONLY a fenced python code block defining the function.",
+    "gtype": "code",
+    "gspec": {
+      "fn": "b5q7"
+    }
+  },
+  {
+    "id": "b5q8",
+    "bucket": 5,
+    "prompt": "Write a Python function digital_root(n) that repeatedly sums the decimal digits of a non-negative integer n until one digit remains (digital_root(0)=0, digital_root(9999)=9, digital_root(12345)=6). Return ONLY a fenced python code block defining the function.",
+    "gtype": "code",
+    "gspec": {
+      "fn": "b5q8"
+    }
+  },
+  {
+    "id": "b6q1",
+    "bucket": 6,
+    "prompt": "A pump moves water at 3 litres per second into a tank that holds 54,000 litres. Starting empty, how many HOURS to fill it? Give only the number of hours.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 5.0,
+      "tol": 0.001
+    }
+  },
+  {
+    "id": "b6q2",
+    "bucket": 6,
+    "prompt": "A car travels 240 km using 15 litres of fuel. What is its fuel efficiency in km per litre? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 16.0,
+      "tol": 0.001
+    }
+  },
+  {
+    "id": "b6q3",
+    "bucket": 6,
+    "prompt": "A speed of 60 miles per hour equals how many feet per second? (1 mile = 5280 feet.) Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 88.0,
+      "tol": 0.01
+    }
+  },
+  {
+    "id": "b6q4",
+    "bucket": 6,
+    "prompt": "A recipe for 4 people needs 300 grams of flour. How many grams are needed for 7 people, keeping the same ratio? Give only the number of grams.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 525.0,
+      "tol": 0.01
+    }
+  },
+  {
+    "id": "b6q5",
+    "bucket": 6,
+    "prompt": "How many seconds are in 2.5 hours? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 9000.0,
+      "tol": 0
+    }
+  },
+  {
+    "id": "b6q6",
+    "bucket": 6,
+    "prompt": "A tank leaks at 0.2 litres per minute. How many litres leak out in 3 hours? Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 36.0,
+      "tol": 0.001
+    }
+  },
+  {
+    "id": "b6q7",
+    "bucket": 6,
+    "prompt": "Light travels at 3 x 10^8 metres per second. How many metres does it travel in 5 milliseconds? Give only the number of metres.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 1500000.0,
+      "tol": 1
+    }
+  },
+  {
+    "id": "b6q8",
+    "bucket": 6,
+    "prompt": "12 workers build a wall in 10 days. At the same rate, how many days would 8 workers take to build the same wall? Give only the number of days.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 15.0,
+      "tol": 0.01
+    }
+  },
+  {
+    "id": "b7q1",
+    "bucket": 7,
+    "prompt": "List exactly 5 real country names that contain NO letter 'a' (case-insensitive). Output one country per line and nothing else.",
+    "gtype": "no_letter_lines",
+    "gspec": {
+      "n": 5,
+      "letter": "a"
+    }
+  },
+  {
+    "id": "b7q2",
+    "bucket": 7,
+    "prompt": "Output exactly three English words, each beginning with the letter 'q', separated by commas, and nothing else.",
+    "gtype": "starts_with",
+    "gspec": {
+      "n": 3,
+      "letter": "q",
+      "sep": ","
+    }
+  },
+  {
+    "id": "b7q3",
+    "bucket": 7,
+    "prompt": "Output the numbers 1 to 10 in order, but replace every even number with the word 'even'. Separate items with single spaces. Output only that line.",
+    "gtype": "exact",
+    "gspec": {
+      "key": "1 even 3 even 5 even 7 even 9 even"
+    }
+  },
+  {
+    "id": "b7q4",
+    "bucket": 7,
+    "prompt": "Reverse the word 'benchmark' and output only the reversed string, nothing else.",
+    "gtype": "exact",
+    "gspec": {
+      "key": "kramhcneb"
+    }
+  },
+  {
+    "id": "b7q5",
+    "bucket": 7,
+    "prompt": "List exactly 3 words that do NOT contain the letter 'e'. Output one word per line and nothing else.",
+    "gtype": "no_letter_lines",
+    "gspec": {
+      "n": 3,
+      "letter": "e",
+      "any_word": true
+    }
+  },
+  {
+    "id": "b7q6",
+    "bucket": 7,
+    "prompt": "Respond with exactly the single word 'ready' in lowercase and nothing else.",
+    "gtype": "exact",
+    "gspec": {
+      "key": "ready"
+    }
+  },
+  {
+    "id": "b7q7",
+    "bucket": 7,
+    "prompt": "Count down from 5 to 1 inclusive, separated by commas, and output only that line.",
+    "gtype": "countdown",
+    "gspec": {
+      "start": 5,
+      "stop": 1
+    }
+  },
+  {
+    "id": "b7q8",
+    "bucket": 7,
+    "prompt": "Output exactly four animal names in alphabetical order, one per line, with no numbering and nothing else.",
+    "gtype": "sorted_lines",
+    "gspec": {
+      "n": 4
+    }
+  },
+  {
+    "id": "b8q1",
+    "bucket": 8,
+    "prompt": "In Python 3, does str.removeprefix remove the prefix repeatedly until it is gone? Answer yes or no, and give the result of 'abcabcx'.removeprefix('abc').",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "no"
+        ],
+        [
+          "abcx",
+          "abcx"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b8q2",
+    "bucket": 8,
+    "prompt": "In Python, is the expression 0.1 + 0.2 == 0.3 True? Answer yes or no, and give the actual value of 0.1 + 0.2.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "no"
+        ],
+        [
+          "0.30000000000000004",
+          "0.30000000000000004"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b8q3",
+    "bucket": 8,
+    "prompt": "In Python, does [1, 2, 3][::-1] equal [3, 2, 1]? Answer yes or no.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "yes"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b8q4",
+    "bucket": 8,
+    "prompt": "In Python 3, does len('café') return 4? Answer yes or no and give the number it returns.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "yes"
+        ],
+        [
+          "4",
+          "4"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b8q5",
+    "bucket": 8,
+    "prompt": "In Python, does bool('False') (the non-empty string 'False') return True or False? Answer with one word.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "true"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b8q6",
+    "bucket": 8,
+    "prompt": "In Python, is 9 // 2 equal to 4? Answer yes or no and give the value.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "yes"
+        ],
+        [
+          "4",
+          "4"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b8q7",
+    "bucket": 8,
+    "prompt": "In Python, does 'ab' * 3 produce 'ababab'? Answer yes or no.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "yes"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "b8q8",
+    "bucket": 8,
+    "prompt": "In Python 3, does 5 / 2 equal 2 (i.e. is it integer division)? Answer yes or no and give the value.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "no"
+        ],
+        [
+          "2.5",
+          "2.5"
+        ]
+      ],
+      "forbid": []
+    }
+  }
+]

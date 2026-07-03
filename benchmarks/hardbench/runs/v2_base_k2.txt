@@ -1,0 +1,112 @@
+### cbq1
+5/18
+
+### cbq2
+1/9
+
+### cbq3
+1/17
+
+### cbq4
+1/4
+
+### cbq5
+15/28
+
+### cbq6
+11/36
+
+### cbq7
+1260
+
+### cbq8
+50
+
+### kkq1
+Beth
+
+### kkq2
+Evan
+
+### kkq3
+Hugo
+
+### kkq4
+Quin
+
+### kkq5
+Theo
+
+### kkq6
+Will
+
+### kkq7
+Bea
+
+### kkq8
+Hana
+
+### slq1
+yew
+fig
+elm
+
+### slq2
+14, 22, 30
+
+### slq3
+ant
+bee
+cat
+
+### slq4
+red, blue, gold, pink, green
+
+### slq5
+11, 3, 2
+
+### slq6
+kiwi
+lime
+
+### wpq1
+175
+
+### wpq10
+120
+
+### wpq2
+145
+
+### wpq3
+23
+
+### wpq4
+12
+
+### wpq5
+210
+
+### wpq6
+192
+
+### wpq7
+3
+
+### wpq8
+12
+
+### wpq9
+180
+
+### zbq1
+tea
+
+### zbq2
+swede
+
+### zbq3
+polo
+
+### zbq4
+ford

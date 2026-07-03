@@ -141,6 +141,27 @@ this is illustrative evidence, not a statistically powered study. Reproduce it
 yourself with your own tasks using the steps in
 [`benchmarks/METHODOLOGY.md`](benchmarks/METHODOLOGY.md).
 
+### Hard, deterministic benchmark (hardbench)
+
+A second, much harder benchmark — **127 questions, graded deterministically (no LLM
+judge), every logic puzzle solver-verified** — probed whether a better prompt could make
+the model "answer harder questions." Details and raw runs in
+[`benchmarks/hardbench/`](benchmarks/hardbench/). The honest findings:
+
+- **Reasoning is at ceiling.** From pure reasoning (no tools), the weaker model
+  (`claude-haiku-4-5`) already solved essentially everything answerable — a full 5-house
+  Einstein puzzle, 4-speaker knights-and-knaves, exact combinatorics, 12-step trap word
+  problems (62/64, 35.7/36, 14.3/16). There is little accuracy headroom for *any* prompt
+  to recover; the only robust failure was long-string character counting.
+- **Where Mythos 6 wins, it wins big and reliably.** On tasks the model genuinely can't do
+  in its head — character counting, big-integer arithmetic, date math — with tools
+  available to both, a plain assistant used tools only *sometimes* (**73%**, and erratic).
+  Operating under Mythos 6, the model used tools **every time** and scored **100% on all
+  three runs — 6 fixed, 0 regressions.** The gain is *tool discipline*, not raw IQ.
+- **No prompt edit was fabricated.** Mythos 6 already scores 100% where headroom exists, so
+  there was nothing honest to "improve" — the result is a validation, plus a clear ceiling
+  finding. Remaining failures are capability limits no system prompt can move.
+
 ## What's inside `Mythos-6.md`
 
 <details>

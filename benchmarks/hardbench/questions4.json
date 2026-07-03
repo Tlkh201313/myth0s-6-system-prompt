@@ -1,0 +1,116 @@
+[
+  {
+    "id": "tcq1",
+    "bucket": "count",
+    "prompt": "How many times does the letter 'e' appear in this text? Text: \"The quick brown fox jumps over the lazy dog near the riverbank every evening before sunset\". Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 13,
+      "tol": 0
+    }
+  },
+  {
+    "id": "tcq2",
+    "bucket": "count",
+    "prompt": "How many times does the letter 'p' appear in this text? Text: \"Peter Piper picked a peck of pickled peppers and the pepper Peter picked was surely pungent\". Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 15,
+      "tol": 0
+    }
+  },
+  {
+    "id": "tcq3",
+    "bucket": "count",
+    "prompt": "How many times does the letter 's' appear in this text? Text: \"She sells sea shells by the sea shore of the small silver stream since seven sisters sailed south\". Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 18,
+      "tol": 0
+    }
+  },
+  {
+    "id": "tcq4",
+    "bucket": "count",
+    "prompt": "How many times does the letter 's' appear in this text? Text: \"Mississippi assessment session possesses less stress across massachusetts businesses professionally\". Give only the number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 33,
+      "tol": 0
+    }
+  },
+  {
+    "id": "taq1",
+    "bucket": "arith",
+    "prompt": "Compute exactly: 8675309 * 1234567. Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 10710250206203,
+      "tol": 0
+    }
+  },
+  {
+    "id": "taq2",
+    "bucket": "arith",
+    "prompt": "Compute exactly: 987654321 * 123456789. Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 121932631112635269,
+      "tol": 0
+    }
+  },
+  {
+    "id": "taq3",
+    "bucket": "arith",
+    "prompt": "Compute exactly: 20! (twenty factorial). Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 2432902008176640000,
+      "tol": 0
+    }
+  },
+  {
+    "id": "taq4",
+    "bucket": "arith",
+    "prompt": "Compute exactly: 2 ** 60. Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 1152921504606846976,
+      "tol": 0
+    }
+  },
+  {
+    "id": "taq5",
+    "bucket": "arith",
+    "prompt": "What is 7^100 mod 1000 (the last three digits of 7 to the power 100)? Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 1,
+      "tol": 0
+    }
+  },
+  {
+    "id": "tdq1",
+    "bucket": "date",
+    "prompt": "How many days are there between 1901-04-12 and 2023-11-30 (end minus start)? Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 44792,
+      "tol": 0
+    }
+  },
+  {
+    "id": "tdq2",
+    "bucket": "date",
+    "prompt": "What day of the week was 1969-07-20 (the first Moon landing)? Give the weekday name.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "sunday"
+        ]
+      ],
+      "forbid": []
+    }
+  }
+]

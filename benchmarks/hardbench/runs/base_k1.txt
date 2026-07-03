@@ -1,0 +1,279 @@
+### b1q1
+Feathers weigh more.
+
+### b1q2
+0.15
+
+### b1q3
+Yes, she is his mother.
+
+### b1q4
+7
+
+### b1q5
+12
+
+### b1q6
+glass
+
+### b1q7
+5
+
+### b1q8
+Roosters don't lay eggs.
+
+### b2q1
+Priya
+
+### b2q2
+3
+
+### b2q3
+2
+
+### b2q4
+Sam
+
+### b2q5
+6
+
+### b2q6
+13
+
+### b2q7
+Ana: fish, red
+Ben: dog, green
+Cy: cat, blue
+
+### b2q8
+19
+
+### b3q1
+16288624
+
+### b3q2
+474552
+
+### b3q3
+1258146
+
+### b3q4
+131072
+
+### b3q5
+7429
+
+### b3q6
+301
+
+### b3q7
+Wednesday
+
+### b3q8
+99980001
+
+### b4q1
+6
+
+### b4q2
+9
+
+### b4q3
+12
+
+### b4q4
+5
+
+### b4q5
+14
+
+### b4q6
+3
+
+### b4q7
+10
+
+### b4q8
+8
+
+### b5q1
+```python
+def run_length_encode(s):
+    if not s:
+        return ''
+    result = []
+    i = 0
+    while i < len(s):
+        char = s[i]
+        count = 1
+        while i + count < len(s) and s[i + count] == char:
+            count += 1
+        result.append(char + str(count))
+        i += count
+    return ''.join(result)
+```
+
+### b5q2
+```python
+def rle_decode(s):
+    result = []
+    i = 0
+    while i < len(s):
+        char = s[i]
+        i += 1
+        count_str = ''
+        while i < len(s) and s[i].isdigit():
+            count_str += s[i]
+            i += 1
+        count = int(count_str)
+        result.append(char * count)
+    return ''.join(result)
+```
+
+### b5q3
+```python
+def is_clean_palindrome(s):
+    clean = ''.join(c.lower() for c in s if c.isalnum())
+    return clean == clean[::-1]
+```
+
+### b5q4
+```python
+def fee_faw(n):
+    result = []
+    for i in range(1, n + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            result.append('feefaw')
+        elif i % 3 == 0:
+            result.append('fee')
+        elif i % 5 == 0:
+            result.append('faw')
+        else:
+            result.append(i)
+    return result
+```
+
+### b5q5
+```python
+def fib(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
+```
+
+### b5q6
+```python
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+```
+
+### b5q7
+```python
+def caesar(s, k):
+    result = []
+    for char in s:
+        if char.isalpha():
+            if char.isupper():
+                result.append(chr((ord(char) - ord('A') + k) % 26 + ord('A')))
+            else:
+                result.append(chr((ord(char) - ord('a') + k) % 26 + ord('a')))
+        else:
+            result.append(char)
+    return ''.join(result)
+```
+
+### b5q8
+```python
+def digital_root(n):
+    while n >= 10:
+        n = sum(int(digit) for digit in str(n))
+    return n
+```
+
+### b6q1
+5
+
+### b6q2
+16
+
+### b6q3
+88
+
+### b6q4
+525
+
+### b6q5
+9000
+
+### b6q6
+36
+
+### b6q7
+1500000
+
+### b6q8
+15
+
+### b7q1
+Yemen
+Turkey
+Cyprus
+Sweden
+Belgium
+
+### b7q2
+queen, quick, quit
+
+### b7q3
+1 even 3 even 5 even 7 even 9 even
+
+### b7q4
+krambhcneb
+
+### b7q5
+cat
+dog
+sun
+
+### b7q6
+ready
+
+### b7q7
+5,4,3,2,1
+
+### b7q8
+bear
+cat
+dog
+lion
+
+### b8q1
+No, abcx
+
+### b8q2
+No, 0.30000000000000004
+
+### b8q3
+Yes
+
+### b8q4
+Yes, 4
+
+### b8q5
+True
+
+### b8q6
+Yes, 4
+
+### b8q7
+Yes
+
+### b8q8
+No, 2.5

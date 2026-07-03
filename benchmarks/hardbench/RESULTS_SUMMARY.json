@@ -1,0 +1,62 @@
+{
+  "v1_classic_trap": {
+    "n_questions": 64,
+    "k": 3,
+    "base_mean": 62.0,
+    "per_run": [
+      62,
+      62,
+      62
+    ],
+    "note": "naked reasoning, no tools"
+  },
+  "v2_hard_reasoning": {
+    "n_questions": 36,
+    "k": 3,
+    "base_mean": 35.7,
+    "per_run": [
+      36,
+      36,
+      35
+    ],
+    "note": "knights&knaves, zebra, combinatorics, multi-step; naked reasoning"
+  },
+  "v3_edge": {
+    "n_questions": 16,
+    "k": 3,
+    "base_mean": 14.3,
+    "per_run": [
+      14,
+      15,
+      14
+    ],
+    "note": "5-house Einstein, 4-speaker K&K, 12-step traps, long-count; naked reasoning"
+  },
+  "v4_tool_fixable": {
+    "n_questions": 11,
+    "k": 3,
+    "tools": "ENABLED",
+    "base_mean": 8.0,
+    "mythos_mean": 11.0,
+    "base_per_run": [
+      11,
+      7,
+      6
+    ],
+    "mythos_per_run": [
+      11,
+      11,
+      11
+    ],
+    "questions_fixed_by_mythos": [
+      "taq1",
+      "tcq1",
+      "tcq2",
+      "tcq3",
+      "tcq4",
+      "tdq1"
+    ],
+    "regressions": [],
+    "note": "counting + big arithmetic + dates; BASE=plain assistant, MYTHOS=operating under Mythos-6.md"
+  }
+}

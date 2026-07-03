@@ -1,0 +1,47 @@
+### z5q1
+beer
+
+### z5q2
+yellow
+
+### z5q3
+germ
+
+### z5q4
+milk
+
+### k4q1
+Ben, Cy
+
+### k4q2
+Fin, Gus
+
+### k4q3
+Jon, Kai
+
+### k4q4
+Ned, Ola
+
+### wLq1
+255
+
+### wLq2
+484
+
+### wLq3
+15
+
+### wLq4
+480
+
+### wLq5
+206
+
+### cLq1
+33
+
+### cLq2
+31
+
+### cLq3
+18

@@ -1,0 +1,420 @@
+[
+  {
+    "id": "cbq1",
+    "bucket": "comb",
+    "prompt": "A bag has 4 red, 3 blue, and 2 green marbles. You draw 2 at random without replacement. What is the probability both drawn marbles are the same color? Give the answer as a reduced fraction a/b.",
+    "gtype": "fraction",
+    "gspec": {
+      "num": 5,
+      "den": 18
+    }
+  },
+  {
+    "id": "cbq2",
+    "bucket": "comb",
+    "prompt": "Two fair six-sided dice are rolled. What is the probability that the sum is exactly 9? Give the answer as a reduced fraction a/b.",
+    "gtype": "fraction",
+    "gspec": {
+      "num": 1,
+      "den": 9
+    }
+  },
+  {
+    "id": "cbq3",
+    "bucket": "comb",
+    "prompt": "From a standard 52-card deck, you draw 2 cards without replacement. What is the probability that both are hearts? Give the answer as a reduced fraction a/b.",
+    "gtype": "fraction",
+    "gspec": {
+      "num": 1,
+      "den": 17
+    }
+  },
+  {
+    "id": "cbq4",
+    "bucket": "comb",
+    "prompt": "A fair coin is flipped 4 times. What is the probability of getting exactly 3 heads? Give the answer as a reduced fraction a/b.",
+    "gtype": "fraction",
+    "gspec": {
+      "num": 1,
+      "den": 4
+    }
+  },
+  {
+    "id": "cbq5",
+    "bucket": "comb",
+    "prompt": "A bag has 5 white and 3 black balls. You draw 3 without replacement. What is the probability that exactly 2 are white? Give the answer as a reduced fraction a/b.",
+    "gtype": "fraction",
+    "gspec": {
+      "num": 15,
+      "den": 28
+    }
+  },
+  {
+    "id": "cbq6",
+    "bucket": "comb",
+    "prompt": "You roll two fair six-sided dice. What is the probability that at least one shows a 6? Give the answer as a reduced fraction a/b.",
+    "gtype": "fraction",
+    "gspec": {
+      "num": 11,
+      "den": 36
+    }
+  },
+  {
+    "id": "cbq7",
+    "bucket": "comb",
+    "prompt": "How many distinct arrangements are there of the letters in the word 'BALLOON'? Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 1260,
+      "tol": 0
+    }
+  },
+  {
+    "id": "cbq8",
+    "bucket": "comb",
+    "prompt": "In how many ways can you choose a committee of 3 people from 8, if two specific people refuse to serve together? Give only the integer.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 50,
+      "tol": 0
+    }
+  },
+  {
+    "id": "kkq1",
+    "bucket": "kk",
+    "prompt": "Knights always tell the truth; knaves always lie. Alan says: 'Beth is a knave.' Beth says: 'Cody is a knave.' Cody says: 'Alan and Beth are the same type.' Reply with the names of ALL the knights, comma-separated. If none, reply 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Beth"
+      ],
+      "universe": [
+        "Alan",
+        "Beth",
+        "Cody"
+      ]
+    }
+  },
+  {
+    "id": "kkq2",
+    "bucket": "kk",
+    "prompt": "Knights always tell the truth; knaves always lie. Dana says: 'Evan is a knave.' Evan says: 'Finn is a knave.' Finn says: 'Dana and Evan are the same type.' Reply with the names of ALL the knights, comma-separated. If none, reply 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Evan"
+      ],
+      "universe": [
+        "Dana",
+        "Evan",
+        "Finn"
+      ]
+    }
+  },
+  {
+    "id": "kkq3",
+    "bucket": "kk",
+    "prompt": "Knights always tell the truth; knaves always lie. Gwen says: 'Hugo is a knave.' Hugo says: 'Ivan is a knave.' Ivan says: 'Gwen and Hugo are the same type.' Reply with the names of ALL the knights, comma-separated. If none, reply 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Hugo"
+      ],
+      "universe": [
+        "Gwen",
+        "Hugo",
+        "Ivan"
+      ]
+    }
+  },
+  {
+    "id": "kkq4",
+    "bucket": "kk",
+    "prompt": "Knights always tell the truth; knaves always lie. Pia says: 'Quin is a knave.' Quin says: 'Rhys is a knave.' Rhys says: 'Pia and Quin are the same type.' Reply with the names of ALL the knights, comma-separated. If none, reply 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Quin"
+      ],
+      "universe": [
+        "Pia",
+        "Quin",
+        "Rhys"
+      ]
+    }
+  },
+  {
+    "id": "kkq5",
+    "bucket": "kk",
+    "prompt": "Knights always tell the truth; knaves always lie. Sana says: 'Theo is a knave.' Theo says: 'Uma is a knave.' Uma says: 'Sana and Theo are the same type.' Reply with the names of ALL the knights, comma-separated. If none, reply 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Theo"
+      ],
+      "universe": [
+        "Sana",
+        "Theo",
+        "Uma"
+      ]
+    }
+  },
+  {
+    "id": "kkq6",
+    "bucket": "kk",
+    "prompt": "Knights always tell the truth; knaves always lie. Vera says: 'Will is a knave.' Will says: 'Xena is a knave.' Xena says: 'Vera and Will are the same type.' Reply with the names of ALL the knights, comma-separated. If none, reply 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Will"
+      ],
+      "universe": [
+        "Vera",
+        "Will",
+        "Xena"
+      ]
+    }
+  },
+  {
+    "id": "kkq7",
+    "bucket": "kk",
+    "prompt": "Knights always tell the truth; knaves always lie. Adam says: 'Bea is a knave.' Bea says: 'Cole is a knave.' Cole says: 'Adam and Bea are the same type.' Reply with the names of ALL the knights, comma-separated. If none, reply 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Bea"
+      ],
+      "universe": [
+        "Adam",
+        "Bea",
+        "Cole"
+      ]
+    }
+  },
+  {
+    "id": "kkq8",
+    "bucket": "kk",
+    "prompt": "Knights always tell the truth; knaves always lie. Gil says: 'Hana is a knave.' Hana says: 'Ike is a knave.' Ike says: 'Gil and Hana are the same type.' Reply with the names of ALL the knights, comma-separated. If none, reply 'none'.",
+    "gtype": "nameset",
+    "gspec": {
+      "key": [
+        "Hana"
+      ],
+      "universe": [
+        "Gil",
+        "Hana",
+        "Ike"
+      ]
+    }
+  },
+  {
+    "id": "slq1",
+    "bucket": "sel",
+    "prompt": "From this list — [oak, elm, fig, ash, yew, bay] — select every word that does NOT contain the letter \"a\", and list them in reverse alphabetical order, one per line, nothing else.",
+    "gtype": "exact",
+    "gspec": {
+      "key": "yew\nfig\nelm"
+    }
+  },
+  {
+    "id": "slq2",
+    "bucket": "sel",
+    "prompt": "From the numbers [14, 9, 22, 7, 30, 15, 8], list only those that are BOTH even AND greater than 10, in increasing order, comma-separated, nothing else.",
+    "gtype": "exact",
+    "gspec": {
+      "key": "14, 22, 30"
+    }
+  },
+  {
+    "id": "slq3",
+    "bucket": "sel",
+    "prompt": "From [cat, dolphin, ant, whale, bee, tiger], list the words with exactly 3 letters in alphabetical order, one per line, nothing else.",
+    "gtype": "exact",
+    "gspec": {
+      "key": "ant\nbee\ncat"
+    }
+  },
+  {
+    "id": "slq4",
+    "bucket": "sel",
+    "prompt": "Take the words [red, green, blue, gold, pink]. Output them sorted by WORD LENGTH ascending, and for ties by alphabetical order, comma-separated, nothing else.",
+    "gtype": "exact",
+    "gspec": {
+      "key": "red, blue, gold, pink, green"
+    }
+  },
+  {
+    "id": "slq5",
+    "bucket": "sel",
+    "prompt": "From [3, 11, 4, 6, 9, 25, 2], list every PRIME number in DECREASING order, comma-separated, nothing else.",
+    "gtype": "exact",
+    "gspec": {
+      "key": "11, 3, 2"
+    }
+  },
+  {
+    "id": "slq6",
+    "bucket": "sel",
+    "prompt": "From the list [apple, kiwi, plum, mango, pear, lime], select the words that contain the letter \"i\", and output them in alphabetical order, one per line, nothing else.",
+    "gtype": "exact",
+    "gspec": {
+      "key": "kiwi\nlime"
+    }
+  },
+  {
+    "id": "wpq1",
+    "bucket": "wp",
+    "prompt": "A library starts the week with 300 books on the shelf. On Monday, one third of the shelved books are borrowed. On Tuesday, 15 of the borrowed books are returned to the shelf, and then 40 books are borrowed from the shelf. No other changes occur. How many books are on the shelf at the end of Tuesday? Give only the final number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 175,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wpq10",
+    "bucket": "wp",
+    "prompt": "Start with 50. Add 12. Subtract 20. Triple the result. Then subtract 6. What is the final number? Give only the final number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 120,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wpq2",
+    "bucket": "wp",
+    "prompt": "A store had 120 apples. In the morning it sold one quarter of them. In the afternoon it sold 18 more. Before the evening delivery, 4 of the apples sold in the morning were returned and put back. The evening delivery then DOUBLED the number of apples currently in the store. Finally, 7 apples were given away. How many apples remain? Give only the final number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 145,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wpq3",
+    "bucket": "wp",
+    "prompt": "A tank holds 64 litres. It loses half its contents on day 1, then half of what remains on day 2. On day 3, 10 litres are added, and then 3 litres evaporate. How many litres are in the tank at the end of day 3? Give only the final number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 23,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wpq4",
+    "bucket": "wp",
+    "prompt": "Anna is 3 times as old as Ben. In 4 years, Anna will be twice as old as Ben. How old is Anna now? Give only the final number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 12,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wpq5",
+    "bucket": "wp",
+    "prompt": "A driver covers 60 km at 60 km/h, then rests for 30 minutes, then covers 90 km at 45 km/h. What is the TOTAL elapsed time in minutes, including the rest? Give only the final number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 210,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wpq6",
+    "bucket": "wp",
+    "prompt": "An item costs $200. Its price is first increased by 20%, then the new price is decreased by 20%. What is the final price in dollars? Give only the final number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 192,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wpq7",
+    "bucket": "wp",
+    "prompt": "In a class of 30 students, 18 play soccer, 15 play tennis, and 6 play both. How many students play neither sport? Give only the final number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 3,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wpq8",
+    "bucket": "wp",
+    "prompt": "There are 48 candies. Half are given to Ana. Then one third of the REMAINING candies are given to Ben. Then you keep 4 for yourself and give all the rest to Cy. How many candies does Cy get? Give only the final number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 12,
+      "tol": 0
+    }
+  },
+  {
+    "id": "wpq9",
+    "bucket": "wp",
+    "prompt": "Two trains are 300 km apart on the same track, heading toward each other. One travels at 40 km/h, the other at 60 km/h. How many MINUTES until they meet? Give only the final number.",
+    "gtype": "numeric",
+    "gspec": {
+      "key": 180,
+      "tol": 0
+    }
+  },
+  {
+    "id": "zbq1",
+    "bucket": "zebra",
+    "prompt": "There are 3 houses in a row, positions 1 to 3 left to right. Each house has a unique value for every category. Categories: color (red, green, blue); pet (cat, dog, bird); drink (tea, milk, water). Clues: the tea drink is immediately to the right of the cat pet; the water drink is immediately to the right of the green color; the water drink and the blue color are in the same house; the water drink and the bird pet are in the same house. Question: green shares its house with which drink? Answer with one word.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "tea"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "zbq2",
+    "bucket": "zebra",
+    "prompt": "There are 4 houses in a row, positions 1 to 4 left to right. Each house has a unique value for every category. Categories: color (red, green, white, yellow); nation (brit, dane, swede, norse). Clues: the dane nation is immediately to the right of the white color; the swede nation and the white color are in the same house; the swede nation is immediately to the right of the yellow color; the norse nation is immediately to the right of the red color; the norse nation and the yellow color are in the same house. Question: white shares its house with which nation? Answer with one word.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "swede"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "zbq3",
+    "bucket": "zebra",
+    "prompt": "There are 4 houses in a row, positions 1 to 4 left to right. Each house has a unique value for every category. Categories: name (amy, bob, cai, dot); sport (golf, judo, polo, surf). Clues: the judo sport is immediately to the right of the amy name; the polo sport is immediately to the right of the bob name; the polo sport and the cai name are in the same house; the surf sport is immediately to the right of the cai name; the surf sport and the dot name are in the same house. Question: cai shares its house with which sport? Answer with one word.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "polo"
+        ]
+      ],
+      "forbid": []
+    }
+  },
+  {
+    "id": "zbq4",
+    "bucket": "zebra",
+    "prompt": "There are 3 houses in a row, positions 1 to 3 left to right. Each house has a unique value for every category. Categories: name (ravi, sami, tara); car (ford, kia, opel); floor (one, two, three). Clues: the one floor is immediately to the right of the ford car; the three floor is immediately to the right of the ravi name; the three floor and the tara name are in the same house; the three floor and the opel car are in the same house. Question: sami shares its house with which car? Answer with one word.",
+    "gtype": "contains",
+    "gspec": {
+      "all_any": [
+        [
+          "ford"
+        ]
+      ],
+      "forbid": []
+    }
+  }
+]

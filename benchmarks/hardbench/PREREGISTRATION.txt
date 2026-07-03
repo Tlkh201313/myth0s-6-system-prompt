@@ -1,0 +1,16 @@
+HARDBENCH PRE-REGISTRATION (frozen before any prompt edit)
+date: 2026-07-03
+battery_hash: 161be96cb258
+questions: 64 (8 buckets x 8), deterministic keys, altered constants
+test model: claude-haiku-4-5 (weak model = where headroom exists; Opus is at ceiling)
+conditions: BASE (task only) | MYTHOS (full Mythos-6.md first, then task) | EFFORT (task + generic 'think step by step, use tools, double-check')
+grading: deterministic key-match / code-execution (grade.py). No LLM judge for pass/fail.
+run batching: one subagent answers the full 64-question battery per (condition,run), writes to runs/<cond>_k<i>.txt. CAVEAT: batched, not per-question-isolated; disclosed.
+k_discovery (BASE): 3    k_measure (all conds): 5
+target set: questions BASE fails (pass-rate < 2/3). NOT 'both-fail'.
+process-vs-ceiling: GUIDED probe (task + explicit relevant step). fixable = GUIDED >=4/5, else ceiling (excluded).
+split: process-fixable targets stratified 50/50 by bucket -> TUNE (editor may read) / HOLDOUT (texts never read by editor).
+forbidden edit: no battery number/entity/answer n-gram may appear in any prompt diff; edit must generalize to same-class non-battery items; one edit / one existing section / one commit; no new section.
+PRIMARY METRIC (pre-registered, single): on HOLDOUT, paired sign test MYTHOS>BASE AND MYTHOS>=EFFORT at k=5. Tune-set lift is optimization signal only, never the claim.
+regression gates each round: G1 legacy easy set; G2 prior-fixed stay >=4/5; G3 ~sanity set BASE-passes not newly broken; G4 36 sections + refs + bloat <=+2%/round cap ~20500 words; G5 one edit/one section.
+stop: retire lever after 2 failed edits; global stop when all fixable TUNE >=4/5 no-regress, OR 8 rounds, OR 2 rounds ship nothing, OR bloat cap. Remaining failures reported as ceiling/unfixed, never edited around.
