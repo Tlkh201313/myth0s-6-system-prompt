@@ -110,20 +110,54 @@ version.
 
 ## Benchmarks
 
+A current hardest-six comparison: plain Opus (`base`) vs. the same Opus with the current
+edited Mythos overlay (`myth`). The exact label is **blind Claude-Sonnet pairwise judge,
+position-swapped, K=3, single judge — directional, not statistically powered; ±1 net is
+within noise.** All 36 answer files were checked before grading: zero session-limit
+contamination.
+
+<p align="center">
+  <img src="benchmarks/assets/chart-scores.svg" alt="Hardest-six pairwise wins for plain Opus versus Opus with the current Mythos overlay" width="100%">
+</p>
+
+<p align="center">
+  <img src="benchmarks/assets/chart-dimensions.svg" alt="Measured benchmark effects across Mythos prompt iterations" width="100%">
+</p>
+
+| Task | Base wins | Myth wins | Ties | Verdict | `len_d` (myth − base) |
+|---|---:|---:|---:|---|---:|
+| `co_cursor_tiebreak` | 0 | 0 | 3 | tie | −456 |
+| `co_int_overflow` | 1 | 1 | 1 | tie | +92 |
+| `cy_ssrf_bypass` | 0 | 2 | 1 | GAP (myth > base) | +783 |
+| `cy_jwt_alg` | 1 | 1 | 1 | tie | −8 |
+| `re_base_rate` | 0 | 0 | 3 | tie | −2 |
+| `re_simpsons` | 0 | 1 | 2 | GAP (myth > base; noisy task) | +116 |
+| **Overall** | **2** | **5** | **11** | **net +3; regressions: none** | — |
+
+**Honest read:** this is not evidence that an overlay raises Opus's model ceiling. On
+tasks Opus already aces, most comparisons tie. The reliable gains are removal of two
+observed regressions: the bounded scope-creep task moved from REGRESSION to a shorter
+Mythos win, and the integer-overflow self-correction fumble moved from REGRESSION to a
+tie. Across the hardest six, directional net moved **0 → +1 → +3** over the original,
+regression-fixed, and current prompt iterations; the last step is within the stated
+single-judge noise band.
+
+The targeted SSRF verbosity fix moved `cy_ssrf_bypass` from **REGRESSION** to a Mythos
+GAP while `len_d` fell from **+1102 to +783 characters** (−319, about 29%). It helped,
+but the overlay answer remains longer, so the concision problem is reduced rather than
+declared solved. `re_simpsons` has flipped across K=3 runs and is treated as noise, not a
+capability claim. Raw artifacts for this newer run are not yet included in this repo;
+the older reproducible mini-benchmark remains below.
+
+<details>
+<summary>Earlier 4-task illustrative mini-benchmark</summary>
+
 A real, small, blind-judged comparison — **not invented numbers.** Four tasks were run
 twice each (plain Claude vs. Claude with `Mythos-6.md` loaded as its operating
 instructions), and every pair was scored blind by an independent judge that didn't know
 which response was which. Full methodology, raw transcripts, and the scoring rubric are
 in [`benchmarks/METHODOLOGY.md`](benchmarks/METHODOLOGY.md) — including the one task
 where Mythos 6 *lost*, kept in rather than dropped.
-
-<p align="center">
-  <img src="benchmarks/assets/chart-scores.svg" alt="Per-task benchmark scores, baseline vs Mythos 6" width="100%">
-</p>
-
-<p align="center">
-  <img src="benchmarks/assets/chart-dimensions.svg" alt="Per-dimension benchmark averages, baseline vs Mythos 6" width="100%">
-</p>
 
 | Task | Baseline | Mythos 6 | Winner |
 |---|---|---|---|
@@ -140,6 +174,8 @@ the actual explanation, and the judge correctly penalized that. n=4, one judge m
 this is illustrative evidence, not a statistically powered study. Reproduce it
 yourself with your own tasks using the steps in
 [`benchmarks/METHODOLOGY.md`](benchmarks/METHODOLOGY.md).
+
+</details>
 
 ## What's inside `Mythos-6.md`
 

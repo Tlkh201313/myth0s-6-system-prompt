@@ -1,41 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380" font-family="Helvetica,Arial,sans-serif">
-<rect width="720" height="380" fill="#14151a" rx="12"/>
-<text x="360.0" y="34" fill="#e6e6eb" font-size="18" font-weight="700" text-anchor="middle">Mini-benchmark: average score per dimension (0-5)</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" font-family="Helvetica,Arial,sans-serif" role="img" aria-labelledby="title desc">
+  <title id="title">Measured effects across Mythos prompt iterations</title>
+  <desc id="desc">Directional net on the hardest six moved from zero to plus one to plus three. The targeted SSRF length delta fell from plus 1102 to plus 783 characters, a twenty-nine percent reduction, while the verdict moved from regression to Mythos gap.</desc>
+  <rect width="900" height="470" rx="14" fill="#14151a"/>
+  <text x="450" y="38" fill="#e6e6eb" font-size="20" font-weight="700" text-anchor="middle">Measured effect of prompt edits</text>
+  <text x="450" y="62" fill="#9aa0ac" font-size="12" text-anchor="middle">same hardest-six benchmark · current edited prompt · mechanism + result, not prompt-size claims</text>
 
-<rect x="60" y="50" width="14" height="14" rx="3" fill="#7c8798"/><text x="80" y="62" fill="#9aa0ac" font-size="12">Baseline Claude</text><rect x="210" y="50" width="14" height="14" rx="3" fill="#8b5cf6"/><text x="230" y="62" fill="#9aa0ac" font-size="12">Mythos 6</text>
+  <line x1="450" y1="88" x2="450" y2="382" stroke="#2a2f3a"/>
 
-<line x1="60" y1="320.0" x2="680" y2="320.0" stroke="#2a2f3a" stroke-width="1"/>
-<text x="50" y="324.0" fill="#9aa0ac" font-size="11" text-anchor="end">0</text>
-<line x1="60" y1="270.0" x2="680" y2="270.0" stroke="#2a2f3a" stroke-width="1"/>
-<text x="50" y="274.0" fill="#9aa0ac" font-size="11" text-anchor="end">1</text>
-<line x1="60" y1="220.0" x2="680" y2="220.0" stroke="#2a2f3a" stroke-width="1"/>
-<text x="50" y="224.0" fill="#9aa0ac" font-size="11" text-anchor="end">2</text>
-<line x1="60" y1="170.0" x2="680" y2="170.0" stroke="#2a2f3a" stroke-width="1"/>
-<text x="50" y="174.0" fill="#9aa0ac" font-size="11" text-anchor="end">3</text>
-<line x1="60" y1="120.0" x2="680" y2="120.0" stroke="#2a2f3a" stroke-width="1"/>
-<text x="50" y="124.0" fill="#9aa0ac" font-size="11" text-anchor="end">4</text>
-<line x1="60" y1="70.0" x2="680" y2="70.0" stroke="#2a2f3a" stroke-width="1"/>
-<text x="50" y="74.0" fill="#9aa0ac" font-size="11" text-anchor="end">5</text>
-<rect x="89.4" y="70.0" width="43.4" height="250.0" rx="4" fill="#7c8798"/>
-<rect x="142.2" y="70.0" width="43.4" height="250.0" rx="4" fill="#8b5cf6"/>
-<text x="111.1" y="64.0" fill="#e6e6eb" font-size="12" text-anchor="middle">5.00</text>
-<text x="163.9" y="64.0" fill="#e6e6eb" font-size="12" text-anchor="middle">5.00</text>
-<text x="137.5" y="340.0" fill="#9aa0ac" font-size="12" text-anchor="middle">verification</text>
-<rect x="244.4" y="82.5" width="43.4" height="237.5" rx="4" fill="#7c8798"/>
-<rect x="297.1" y="82.5" width="43.4" height="237.5" rx="4" fill="#8b5cf6"/>
-<text x="266.1" y="76.5" fill="#e6e6eb" font-size="12" text-anchor="middle">4.75</text>
-<text x="318.8" y="76.5" fill="#e6e6eb" font-size="12" text-anchor="middle">4.75</text>
-<text x="292.5" y="340.0" fill="#9aa0ac" font-size="12" text-anchor="middle">grounding</text>
-<rect x="399.5" y="132.5" width="43.4" height="187.5" rx="4" fill="#7c8798"/>
-<rect x="452.1" y="70.0" width="43.4" height="250.0" rx="4" fill="#8b5cf6"/>
-<text x="421.2" y="126.5" fill="#e6e6eb" font-size="12" text-anchor="middle">3.75</text>
-<text x="473.8" y="64.0" fill="#e6e6eb" font-size="12" text-anchor="middle">5.00</text>
-<text x="447.5" y="340.0" fill="#9aa0ac" font-size="12" text-anchor="middle">completeness</text>
-<rect x="554.5" y="82.5" width="43.4" height="237.5" rx="4" fill="#7c8798"/>
-<rect x="607.1" y="132.5" width="43.4" height="187.5" rx="4" fill="#8b5cf6"/>
-<text x="576.2" y="76.5" fill="#e6e6eb" font-size="12" text-anchor="middle">4.75</text>
-<text x="628.9" y="126.5" fill="#e6e6eb" font-size="12" text-anchor="middle">3.75</text>
-<text x="602.5" y="340.0" fill="#9aa0ac" font-size="12" text-anchor="middle">communication</text>
-<line x1="60" y1="320.0" x2="680" y2="320.0" stroke="#9aa0ac" stroke-width="1.5"/>
-<text x="360.0" y="366" fill="#9aa0ac" font-size="12" text-anchor="middle">Mythos 6 trades some communication concision for higher completeness — see benchmarks/METHODOLOGY.md</text>
+  <text x="235" y="100" fill="#e6e6eb" font-size="15" font-weight="700" text-anchor="middle">Directional judge net</text>
+  <text x="235" y="120" fill="#9aa0ac" font-size="11" text-anchor="middle">myth wins − base wins</text>
+  <line x1="72" y1="352" x2="398" y2="352" stroke="#9aa0ac" stroke-width="1.5"/>
+  <line x1="72" y1="282" x2="398" y2="282" stroke="#2a2f3a"/>
+  <line x1="72" y1="212" x2="398" y2="212" stroke="#2a2f3a"/>
+  <line x1="72" y1="142" x2="398" y2="142" stroke="#2a2f3a"/>
+  <text x="60" y="356" fill="#9aa0ac" font-size="11" text-anchor="end">0</text>
+  <text x="60" y="286" fill="#9aa0ac" font-size="11" text-anchor="end">+1</text>
+  <text x="60" y="216" fill="#9aa0ac" font-size="11" text-anchor="end">+2</text>
+  <text x="60" y="146" fill="#9aa0ac" font-size="11" text-anchor="end">+3</text>
+
+  <rect x="100" y="350" width="62" height="2" rx="3" fill="#6d7584"/>
+  <text x="131" y="340" fill="#c7cad1" font-size="13" text-anchor="middle">0</text>
+  <text x="131" y="374" fill="#e6e6eb" font-size="11" text-anchor="middle">original</text>
+
+  <rect x="204" y="282" width="62" height="70" rx="5" fill="#7251cb"/>
+  <text x="235" y="272" fill="#e6e6eb" font-size="13" text-anchor="middle">+1</text>
+  <text x="235" y="374" fill="#e6e6eb" font-size="11" text-anchor="middle">regression fixes</text>
+
+  <rect x="308" y="142" width="62" height="210" rx="5" fill="#8b5cf6"/>
+  <text x="339" y="132" fill="#f0eaff" font-size="14" font-weight="700" text-anchor="middle">+3</text>
+  <text x="339" y="374" fill="#f0eaff" font-size="11" font-weight="700" text-anchor="middle">current 10 edits</text>
+
+  <text x="675" y="100" fill="#e6e6eb" font-size="15" font-weight="700" text-anchor="middle">SSRF verbosity target</text>
+  <text x="675" y="120" fill="#9aa0ac" font-size="11" text-anchor="middle">len_d: myth chars − base chars · lower is better</text>
+  <line x1="502" y1="352" x2="848" y2="352" stroke="#9aa0ac" stroke-width="1.5"/>
+  <line x1="502" y1="252" x2="848" y2="252" stroke="#2a2f3a"/>
+  <line x1="502" y1="152" x2="848" y2="152" stroke="#2a2f3a"/>
+  <text x="490" y="356" fill="#9aa0ac" font-size="11" text-anchor="end">0</text>
+  <text x="490" y="256" fill="#9aa0ac" font-size="11" text-anchor="end">+500</text>
+  <text x="490" y="156" fill="#9aa0ac" font-size="11" text-anchor="end">+1000</text>
+
+  <rect x="566" y="132" width="78" height="220" rx="5" fill="#8893a6"/>
+  <text x="605" y="154" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">+1102</text>
+  <text x="605" y="374" fill="#c7cad1" font-size="11" text-anchor="middle">before edits 6–9</text>
+  <text x="605" y="392" fill="#f59e8b" font-size="11" text-anchor="middle">REGRESSION</text>
+
+  <rect x="706" y="195" width="78" height="157" rx="5" fill="#8b5cf6"/>
+  <text x="745" y="185" fill="#f0eaff" font-size="14" font-weight="700" text-anchor="middle">+783</text>
+  <text x="745" y="374" fill="#f0eaff" font-size="11" font-weight="700" text-anchor="middle">current</text>
+  <text x="745" y="392" fill="#b9a3ff" font-size="11" text-anchor="middle">MYTHOS GAP</text>
+
+  <path d="M655 164 L692 164" stroke="#b9a3ff" stroke-width="2"/>
+  <path d="M685 158 L692 164 L685 170" fill="none" stroke="#b9a3ff" stroke-width="2"/>
+  <text x="674" y="151" fill="#b9a3ff" font-size="12" font-weight="700" text-anchor="middle">−29%</text>
+
+  <line x1="60" y1="414" x2="840" y2="414" stroke="#2a2f3a"/>
+  <text x="450" y="438" fill="#c7cad1" font-size="12" text-anchor="middle">Scope-creep: REGRESSION → shorter Mythos win · self-correction fumble: REGRESSION → tie</text>
+  <text x="450" y="458" fill="#737b8c" font-size="10.5" text-anchor="middle">Directional, not statistically powered · single judge · ±1 net is within noise · SSRF remains longer, not “solved”</text>
 </svg>
